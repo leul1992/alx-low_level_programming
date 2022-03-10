@@ -1,9 +1,9 @@
 #include<stdio.h>
-/*
+/**
+ * main - Prints "Programming is like building a
+ *   multilingual puzzle"
  *
- * main-This is were the code compilation starts
- *
- * return :return 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
