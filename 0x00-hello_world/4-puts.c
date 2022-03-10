@@ -2,8 +2,8 @@
 /*
  *
  * main-This is were the code compilation starts
- * return :return 0
  *
+ * return :return 0
  */
 int main(void)
 {
