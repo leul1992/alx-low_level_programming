@@ -25,7 +25,10 @@ int main(void)
 					putchar(num3);
 					putchar(num4);
 					if (num1 != '9' && num2 != '8')
+					{
 						putchar(',');
+						putchar(' ');
+					}
 				}
 				}
 	putchar('\n');
