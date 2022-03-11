@@ -17,9 +17,9 @@ int main(void)
 		else
 		{
 			putchar(i);
-			putchar(',');
-			putchar(' ');
+			putchar(',' + ' ');
 		}
+		putchar(10);
 	}
 	return (0);
 }
