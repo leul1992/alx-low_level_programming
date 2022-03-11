@@ -20,8 +20,7 @@ int main(void)
 					{
 					putchar(num1);
 					putchar(num2);
-					if (num1 != '9' && num2 != '8')
-						putchar(' ');
+					putchar(' ');
 					putchar(num3);
 					putchar(num4);
 					if (num1 != '9' && num2 != '8')
