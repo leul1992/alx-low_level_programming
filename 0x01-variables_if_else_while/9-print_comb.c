@@ -11,9 +11,16 @@ int main(void)
 	for (i = '0'; i <= '9'; i++)
 	{
 		if (i == '9')
-			putchar(i + '$');
+		{
+			putchar(i);
+			putchar('$');
+		}
 		else
-			putchar(i + ',' + ' ');
+		{
+			putchar(i);
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	return (0);
 }
