@@ -16,7 +16,7 @@ int main(void)
 			{
 			putchar(numx);
 			putchar(numy);
-			if (numx != 8)
+			if (numx + numy !=17)
 			{
 				putchar(',');
 				putchar(' ');
