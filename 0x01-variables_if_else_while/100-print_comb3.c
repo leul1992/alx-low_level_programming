@@ -12,12 +12,15 @@ int main(void)
 	for (numx = '0'; numx <= '9'; numx++)
 		for (numy = '0'; numy <= '9'; numy++)
 		{
+			if (numx < numy)
+			{
 			putchar(numx);
 			putchar(numy);
 			if (numx != 9 && numy != 9)
 			{
 				putchar(',');
 				putchar(' ');
+			}
 			}
 		}
 	putchar('\n');
