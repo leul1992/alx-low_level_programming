@@ -16,7 +16,7 @@ int main(void)
 			{
 			putchar(numx);
 			putchar(numy);
-			if (numx != 9 && numy != 9)
+			if (numx != 8 && numy != 9)
 			{
 				putchar(',');
 				putchar(' ');
