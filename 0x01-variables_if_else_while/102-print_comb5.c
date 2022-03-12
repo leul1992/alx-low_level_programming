@@ -23,12 +23,9 @@ int main(void)
 					putchar(' ');
 					putchar(num3);
 					putchar(num4);
-					if (num1 != '9' && num2 != '8' && num3 != '9' && num4 != '9')
-					{
-						putchar(',');
-						putchar(' ');
+					putchar(',');
+					putchar(' ');
 					}
-				}
 				}
 	putchar('\n');
 	return (0);
