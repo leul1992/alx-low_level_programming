@@ -23,8 +23,11 @@ int main(void)
 					putchar(' ');
 					putchar(num3);
 					putchar(num4);
-					putchar(',');
-					putchar(' ');
+					if (num1 != '9')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				}
 	putchar('\n');
