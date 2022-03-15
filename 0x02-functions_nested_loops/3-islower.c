@@ -1,5 +1,5 @@
 /**
- * test_islower-"checks if the character is lowercase or not"
+ * _islower-"checks if the character is lowercase or not"
  * @c: The character to check
  *
  * Return: On Success (1).
