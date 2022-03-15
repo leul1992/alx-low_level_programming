@@ -1,10 +1,10 @@
-#include<main.h>
+#include"main.h"
 /**
- * main-("alphabet 10 times in lowercase")
+ * print_alphabet_x10-("alphabet 10 times in lowercase")
  *
  * Return: (0)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char ch;
 	int num;
@@ -13,5 +13,4 @@ int main(void)
 		for (ch	= 'a'; ch <= 'z'; ch++)
 			_putchar(ch);
 	_putchar('\n');
-	return (0);
 }
