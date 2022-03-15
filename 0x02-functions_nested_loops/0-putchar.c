@@ -9,10 +9,10 @@ int main(void)
 	char str[] = "_putchar";
 	int i = 0;
 
-	while (i < str.length())
+	while (i < 8)
 	{
 	_putchar(str[i]);
-	i++
+	i++;
 	}
 	_putchar('\n');
 	return (0);
