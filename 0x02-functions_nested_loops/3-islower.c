@@ -1,11 +1,11 @@
 /**
- * _islower-"checks if the character is lowercase or not"
+ * test_islower-"checks if the character is lowercase or not"
  * @c: The character to check
  *
  * Return: On Success (1).
  * On failure, (0) is returned
  */
-int _islower(char c)
+int test_islower(char c)
 {
 	char ch = 'a';
 	int count = 0;
