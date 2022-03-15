@@ -5,18 +5,7 @@
  * Return: On Success (1).
  * On failure, (0) is returned
  */
-int test_islower(char c)
+int _islower(int c)
 {
-	char ch = 'a';
-	int count = 0;
-
-	while (ch <= 'z')
-	{
-	if (c == ch)
-		count++;
-	}
-	if (count == 1)
-		return (1);
-	else
-		return (0);
+	return (c >= 97 && c <= 122);
 }
