@@ -12,10 +12,10 @@ int main(void)
 
 	while (max < 4000000)
 	{
-		if (2 * curr + prev < 4000000)
-			printf("%lu", prev + curr);
+		if (max + curr < 4000000)
+			printf("%lu", max);
 		else
-			printf("%lu, ", prev + curr);
+			printf("%lu, ", max);
 		temp = curr;
 		curr = prev + curr;
 		prev = temp;
