@@ -10,9 +10,9 @@ int main(void)
 
 	while (n > 2)
 	{
-		if (n % 3 == 0 || n % 5 ==0)
+		if (n % 3 == 0 || n % 5 == 0)
 			sum += n;
 	}
-	printf ("%d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
