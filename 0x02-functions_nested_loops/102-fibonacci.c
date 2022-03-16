@@ -12,7 +12,10 @@ int main(void)
 
 	while (count < 50)
 	{
-		printf("%lu, ", prev + curr);
+		if (count == 49)
+			printf("%lu", prev + curr);
+		else
+			printf("%lu, ", prev + curr);
 		temp = curr;
 		curr = prev + curr;
 		prev = temp;
