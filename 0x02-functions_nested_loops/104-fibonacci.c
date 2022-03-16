@@ -12,13 +12,12 @@ int main(void)
 
 	while (count < 98)
 	{
-		if (count == 97)
-			printf("%lu", prev + curr);
-		else
-			printf("%lu, ", prev + curr);
-		temp = curr;
-		curr = prev + curr;
-		prev = temp;
+		temp = prev + curr;
+		prev = curr;
+		curr = temp;
+		printf("%lu", temp);
+		if (count < 97)
+			printf(", ");
 		count++;
 	}
 	printf("\n");
