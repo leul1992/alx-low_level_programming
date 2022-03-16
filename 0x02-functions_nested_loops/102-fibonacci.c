@@ -21,5 +21,6 @@ int main(void)
 		prev = temp;
 		count++;
 	}
+	printf("\n");
 	return (0);
 }
