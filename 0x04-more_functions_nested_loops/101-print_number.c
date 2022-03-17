@@ -8,33 +8,25 @@ void print_number(int n)
 {
 	int i;
 	int tmp;
+	int ic;
 
 	i = 10;
 	if (n < 0)
 	{
+		ic = n;
 		n = -1 * n;
-		while (n / i != 0)
-			n * 10;
+	}
+	while (n / i != 0)
+		i = i * 10;
+	if (ic < 0)
 		_putchar('-');
-		while (i != 1)
-		{
-			i = i / 10;
-			tmp = n / i;
-			_putchar('0' + tmp);
-			n = n % i;
-		}
-
-	}
-	else
+	while (i != 1)
 	{
-		while (n / i != 0)
-			n * 10;
-		while (i != 1)
-		{
-			i = i / 10;
-			tmp = n / i;
-			_putchar('0' + tmp);
-			n = n % i;
-		}
+		i = i / 10;
+		tmp = n / i;
+		_putchar('0' + tmp);
+		n = n % i;
 	}
+
+
 }
