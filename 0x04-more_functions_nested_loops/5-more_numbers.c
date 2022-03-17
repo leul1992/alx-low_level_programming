@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * more_numbers-"print 0-14 10X"
- * Return: (0)
+ * Return: void
  */
 void more_numbers(void)
 {
