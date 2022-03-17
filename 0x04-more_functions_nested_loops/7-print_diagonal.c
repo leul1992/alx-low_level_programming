@@ -2,7 +2,7 @@
 /**
  * print_diagonal-"draw a diagonal line"
  * @n:number of backward slash
- * Return: void
+ * Return: (void)
  */
 void print_diagonal(int n)
 {
