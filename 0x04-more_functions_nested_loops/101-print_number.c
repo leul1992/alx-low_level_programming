@@ -10,13 +10,31 @@ void print_number(int n)
 	int tmp;
 
 	i = 10;
-	while (n / i != 0)
-		n * 10;
-	while (i != 1)
+	if (n > 0)
 	{
-		i = i / 10;
-		tmp = n / i;
-		_putchar('0' + tmp);
-		n = n % i;
+		n = -1 * n;
+		while (n / i != 0)
+			n * 10;
+		_putchar('-');
+		while (i != 1)
+		{
+			i = i / 10;
+			tmp = n / i;
+			_putchar('0' + tmp);
+			n = n % i;
+		}
+
+	}
+	else
+	{
+		while (n / i != 0)
+			n * 10;
+		while (i != 1)
+		{
+			i = i / 10;
+			tmp = n / i;
+			_putchar('0' + tmp);
+			n = n % i;
+		}
 	}
 }
