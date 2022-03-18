@@ -16,6 +16,6 @@ int main(void)
 		else
 			n++;
 	}
-	printf("%i\n", n);
+	printf("%lu\n", n);
 	return (0);
 }
