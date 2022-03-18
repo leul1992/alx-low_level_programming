@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main-"print the prime factor of a number"
  * Return: (0)
