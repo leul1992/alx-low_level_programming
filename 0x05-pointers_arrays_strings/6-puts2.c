@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * puts2-"print every other character"
  * @str:the string
