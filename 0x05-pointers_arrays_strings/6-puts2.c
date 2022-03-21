@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * puts2-"print every other character"
  * @str:the string
@@ -11,10 +11,9 @@ void puts2(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == '\0')
-			break;
-		putchar(str[i]);
-		i += 2;
+		if (i % 2 == 0)
+			_putchar(str[i]);
+		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
