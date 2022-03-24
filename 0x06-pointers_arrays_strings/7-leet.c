@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * leet-encode string into 1337
- * @ch:character to be changed
  * @c:characters
  * Return:encoded character
  */
