@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * cap_string-"to uppercase "
- * @c:the characters
+ * @str:the characters
  * Return:uppercased characters
  */
-char *cap_string(char *c)
+char *cap_string(char *str)
 {
 	char sep[] = ",\t;\n; .!?\"(){}";
 int flag, i, ii;
