@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * leet-encode string into 1337
  * @ch:character to be changed
@@ -6,24 +7,21 @@
  */
 char *leet(char *c)
 {
-	int i = 0, j;
+	int i, j;
 	char c1[] = "aeotl";
 	char c2[] = "AEOTL";
 	char c3[] = "43071";
 
-	while (c[i] != '\0')
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		j = 0;
-		while (j < 5)
+		for (j = 0; j < 5; j++)
 		{
 			if (c[i] == c1[j] || c[i] == c2[j])
 			{
 				c[i] = c3[j];
 				break;
 			}
-			j++;
 		}
-		i++;
 	}
 	return (c);
 }
