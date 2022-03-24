@@ -1,5 +1,4 @@
 /**
- * replace-replaces the character
  * leet-encode string into 1337
  * @ch:character to be changed
  * @c:characters
