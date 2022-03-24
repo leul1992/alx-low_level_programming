@@ -20,8 +20,9 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[j];
 		i++;
 		j++;
-		if (dest == '\n')
+		if (dest[i] == '\0')
 			break;
 	}
+
 	return (dest);
 }
