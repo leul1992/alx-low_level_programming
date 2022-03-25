@@ -6,30 +6,25 @@
  */
 void print_number(int n)
 {
-	int d = 1, i = 0, itmp = 0;
+	unsigned int i = 1;
 
+	if (n == 0)
+		_putchar('0' + n);
 	if (n < 0)
 	{
+		n = n * -1;
 		_putchar('-');
-		n = -n;
 	}
-
-	while (n / d != 0)
+	while (n / i != 0)
 	{
-		d = d * 10;
-		i++;
+		i = i * 10;
 	}
-	d = d / 10;
-
-	while (itmp < i)
+	i = i / 10;
+	while (n != 0)
 	{
-		_putchar('0' + n / d);
-		n = n - (n / d) * d;
-		d = d / 10;
-		itmp++;
+		_putchar('0' + n / i);
+		n = n % i;
+		i = i / 10;
 	}
-
-	if (i == 0)
-		_putchar('0' + n);
 
 }
