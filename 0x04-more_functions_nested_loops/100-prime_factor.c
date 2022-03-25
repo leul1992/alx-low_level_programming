@@ -6,7 +6,7 @@
 int main(void)
 {
 	unsigned long int num = 612852475143;
-	long unsigned int n;
+	unsigned long int n;
 
 	n = 2;
 	while (num != 1)
