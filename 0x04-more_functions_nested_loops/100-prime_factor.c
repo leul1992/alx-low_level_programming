@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	long long int num = 612852475143;
-	int n;
+	unsigned long int num = 612852475143;
+	long unsigned int n;
 
 	n = 2;
 	while (num != 1)
