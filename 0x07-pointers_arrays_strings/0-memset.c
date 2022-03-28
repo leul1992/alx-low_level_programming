@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _memset-"fill memory with constant byte"
  * @s:memory to be filled with constant
