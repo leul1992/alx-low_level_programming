@@ -8,3 +8,6 @@ int is_prime_number(int n);
 int _putchar(char c);
 int _check(int, int);
 int _check_square(int, int);
+int last_index(char *s);
+int check(char *s, int start, int end, int pair);
+int is_palindrome(char *s);
