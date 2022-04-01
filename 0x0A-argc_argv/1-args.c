@@ -5,7 +5,7 @@
  * @argb:pointer to argument array
  * Return : (0)
  */
-int main(int argc, char **argv)
+int main(int argc, char const *argv[])
 {
 	(void)argv;
 	printf("%i\n", argc - 1);
