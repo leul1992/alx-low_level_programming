@@ -4,7 +4,8 @@
  * main - multiply numbers
  * @argc : argument number
  * @argv : list of argument
- * Return : (0)
+ * Return: 0 (success)
+ * 1(failure)
  */
 
 int main(int argc, char const *argv[])
