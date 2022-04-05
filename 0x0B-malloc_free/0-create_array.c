@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * create_array-create array of characters
- * @size-size of array
- * @c-character
+ * @size:size of array
+ * @c:character
  * Return : array of char
  */
 char *create_array(unsigned int size, char c)
