@@ -4,7 +4,7 @@
  * @s:string
  * Return:length
  */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
 	int i = 0;
 
@@ -24,15 +24,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int strln1,strln2, i = 0, j = 0;
 	char *s;
 
-	if (s1[i] == '\0')
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	strln1 = _strlen(s1);
 	strln2 = _strlen(s2);
 	if (n > strln2)
 	{
 		n = strln2;
 	}
-	s = malloc(strln1 * n);
+	s = malloc(strln1 + n);
+	if (s == 0)
+		return (NULL);
 	while (i != strln1)
 	{
 		s[i] += s1[i];
@@ -44,7 +48,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
-	if (s == NULL)
-		return (NULL);
+	s[i] = '\0';
 	return (s);
 }
