@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * sum_them_all-sum all of its parameters
- * @n:one parameter
+ * @n:number of parameters
  * Return:int
  */
 int sum_them_all(const unsigned int n, ...)

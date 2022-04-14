@@ -3,7 +3,7 @@
 /**
  * print_numbers-prints numbers followed by new line
  * @separator: string between numbers
- * @n: first number to be printed
+ * @n: number of integers passed
  * Return:nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -24,5 +24,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		j = 0;
 		printf("%i", va_arg(ap, int));
 	}
+	va_end(ap);
 	printf("\n");
 }
