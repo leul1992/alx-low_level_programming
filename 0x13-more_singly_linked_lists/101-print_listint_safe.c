@@ -6,17 +6,22 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *cur;
-	int i = 0;
+    size_t num = 0;
+    long int diff;
 
-	cur = head;
-	while (cur)
-	{
-		printf("[%p] %i\n", &(cur->n), cur->n);
-		i++;
-		cur = cur->next;
-	}
-	if (cur == NULL)
-		exit(98);
-	return (i);
+    while (head)
+    {
+        diff = head - head->next;
+        num++;
+        printf("[%p] %d\n", (void *)head, head->n);
+        if (diff > 0)
+            head = head->next;
+        else
+        {
+            printf("-> [%p] %d\n", (void *)head->next, head->next->n);
+            break;
+        }
+    }
+
+    return (num);
 }
