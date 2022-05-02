@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	cin = write(STDOUT_FILENO, txt, cout);
 	if (cin == -1 || cin != cout)
 		return (0);
-	free (txt);
+	free(txt);
 	close(fd);
 	return (cin);
 
