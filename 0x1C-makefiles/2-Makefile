@@ -1,9 +1,11 @@
-.PHONY : all
-CC = gcc
-SRC := $(wildcard *.c)
-OBJ := $(wildcard *.o)
-NAME := $(wildcard *.exe)
-$(OBJ) : $(SRC)
-	$(CC) -c $(SRC)
+.PHONY: all
+CC=gcc
+SRC=main.c school.c
+OBJ=$(SRC:%.c=%.o)
+NAME=school
+
 all: $(OBJ)
-	$(CC) $(OBJ) -o school
+	$(CC) $(OBJ) -o $(NAME)
+
+%.o: %.c
+	$(CC) -c -o $@ $<
