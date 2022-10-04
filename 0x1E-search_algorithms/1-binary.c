@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 /**
  * binary_search- search for value using binary search
  * @array: pointer to the array list
@@ -12,8 +11,11 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t first = 0, last = size - 1, mid, i;
 
+	if (!array)
+		return (-1);
 	while (first <= last)
 	{
+		mid = (first + last) / 2;
 		printf("Searching in array: ");
 		for (i = first; i <= last; i++)
 		{
@@ -22,7 +24,6 @@ int binary_search(int *array, size_t size, int value)
 			else
 				printf("%ld, ", i);
 		}
-		mid = floor((first + last) / 2);
 		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] > value)
