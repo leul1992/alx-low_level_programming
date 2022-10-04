@@ -2,3 +2,5 @@
 
 In this tasks I cover the following topics:
 	-> Linear Searching Algorithm
+	-> Binary Searching Algorithm
+	-> Jump Searching Algorithm
