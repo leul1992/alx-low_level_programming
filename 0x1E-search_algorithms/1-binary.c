@@ -31,5 +31,7 @@ int binary_search(int *array, size_t size, int value)
 		else
 			first = mid + 1;
 	}
+	if (array[first] == value)
+		return (first);
 	return (-1);
 }
