@@ -20,9 +20,9 @@ int binary_search(int *array, size_t size, int value)
 		for (i = first; i <= last; i++)
 		{
 			if (i == last)
-				printf("%ld\n", i);
+				printf("%d\n", array[i]);
 			else
-				printf("%ld, ", i);
+				printf("%d, ", array[i]);
 		}
 		if (array[mid] == value)
 			return (mid);
