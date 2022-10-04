@@ -11,6 +11,8 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t first = 0, last = size - 1, mid, i;
 
+	if (!array)
+		return (-1);
 	while (first <= last)
 	{
 		printf("Searching in array: ");
