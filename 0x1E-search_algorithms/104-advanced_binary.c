@@ -27,7 +27,7 @@ int advanced_binary(int *array, size_t size, int value)
 	else
 		last = mid;
 	advanced_binary(&array[first], last - first, value);
-	
+
 	if (first < size)
 		return (first);
 	return (-1);
