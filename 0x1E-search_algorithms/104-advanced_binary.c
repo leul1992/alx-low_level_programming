@@ -13,22 +13,21 @@ int advanced_binary(int *array, size_t size, int value)
 
 	if (!array)
 		return (-1);
-	while (first < last)
+	mid = floor((first + last) / 2);
+	printf("Searching in array: \n");
+	for (i = first; i < last; i++)
 	{
-		mid = floor((first + last) / 2);
-		printf("Searching in array: ");
-		for (i = first; i < last; i++)
-		{
-			if (i == last - 1)
-				printf("%d\n", array[i]);
-			else
-				printf("%d, ", array[i]);
-		}
-		if (array[mid] < value)
-			first = mid + 1;
+		if (i == last - 1)
+			printf("%d\n", array[i]);
 		else
-			last = mid;
+			printf("%d, ", array[i]);
 	}
+	if (array[mid] < value)
+		first = mid + 1;
+	else
+		last = mid;
+	advanced_binary(&array[first], last - first, value);
+	
 	if (first < size)
 		return (first);
 	return (-1);
